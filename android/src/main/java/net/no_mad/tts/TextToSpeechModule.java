@@ -79,7 +79,7 @@ public class TextToSpeechModule extends ReactContextBaseJavaModule {
 
     private void resolveReadyPromise(Promise promise) {
         if (ready == Boolean.TRUE) {
-            promise.resolve("success");
+            promise.resolve("FAIL");
         }
         else {
             promise.reject("no_engine", "No TTS engine installed");
